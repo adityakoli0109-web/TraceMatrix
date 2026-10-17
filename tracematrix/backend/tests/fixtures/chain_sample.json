@@ -1,0 +1,63 @@
+{
+  "notice": "Deterministic fixture dataset. Never present these rows as live blockchain findings.",
+  "seed": "0x1111111111111111111111111111111111111111",
+  "wallets": [
+    "0x1111111111111111111111111111111111111111",
+    "0x2222222222222222222222222222222222222222",
+    "0x3333333333333333333333333333333333333333"
+  ],
+  "transactions": [
+    {
+      "tx_hash": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "block_number": 100,
+      "timestamp": "2024-01-01T00:00:00+00:00",
+      "from_address": "0x1111111111111111111111111111111111111111",
+      "to_address": "0x2222222222222222222222222222222222222222",
+      "value_wei": "1000000000000000000",
+      "value_eth": "1",
+      "status": "success",
+      "gas_used": 21000,
+      "gas_price_wei": "1000000000",
+      "is_fixture": true
+    },
+    {
+      "tx_hash": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "block_number": 101,
+      "timestamp": "2024-01-01T00:01:00+00:00",
+      "from_address": "0x2222222222222222222222222222222222222222",
+      "to_address": "0x3333333333333333333333333333333333333333",
+      "value_wei": "500000000000000000",
+      "value_eth": "0.5",
+      "status": "success",
+      "gas_used": 21000,
+      "gas_price_wei": "1000000000",
+      "is_fixture": true
+    },
+    {
+      "tx_hash": "0xcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "block_number": 102,
+      "timestamp": "2024-01-01T00:02:00+00:00",
+      "from_address": "0x1111111111111111111111111111111111111111",
+      "to_address": "0x3333333333333333333333333333333333333333",
+      "value_wei": "100000000000000000",
+      "value_eth": "0.1",
+      "status": "success",
+      "gas_used": 21000,
+      "gas_price_wei": "1000000000",
+      "is_fixture": true
+    }
+  ],
+  "token_transfers": [],
+  "osint": [
+    {
+      "source_type": "github",
+      "source_url": "https://github.com/example/tracematrix-fixture",
+      "source_record_id": "commit-fixture-1",
+      "indicator": "0x3333333333333333333333333333333333333333",
+      "original_timestamp": "2024-01-01T00:01:30+00:00",
+      "extracted_context": "Donation wallet 0x3333333333333333333333333333333333333333",
+      "extraction_method": "fixture",
+      "reliability": "fixture_unverified"
+    }
+  ]
+}
